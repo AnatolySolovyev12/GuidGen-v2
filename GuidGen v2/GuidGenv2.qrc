@@ -1,4 +1,5 @@
 <RCC>
     <qresource prefix="GuidGenv2">
+	     <file>icon.png</file>
     </qresource>
 </RCC>
