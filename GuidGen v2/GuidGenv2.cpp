@@ -34,7 +34,7 @@ GuidGen::GuidGen(QWidget* parent) : QWidget(parent) {
 
     //vbox->addStretch(50); // Добавляем нерастягиваемый отступ внутри виджета (надо пробовать).
     vbox->setSpacing(10); // расстояние между виджетами внутри вертикального бокса
-    vbox->addStretch(1); // равноудаляет от краёв или типо того
+   // vbox->addStretch(1); // равноудаляет от краёв или типо того
     vbox->addWidget(addID);
     vbox->addWidget(addSSomeID);
     vbox->addWidget(remove);
