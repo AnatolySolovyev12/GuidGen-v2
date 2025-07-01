@@ -1,4 +1,5 @@
 <RCC>
     <qresource prefix="GuidGenv2">
+	     <file>C:\Users\PavlovAA\source\repos\GuidGen-v2\GuidGen v2\icon.png</file>
     </qresource>
 </RCC>

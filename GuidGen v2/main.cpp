@@ -12,7 +12,7 @@ int main(int argc, char* argv[])
 	window.resize(650, 400);
 
 	window.setWindowTitle("GuidGen by Solovev");
-	window.setWindowIcon(QIcon("icon.png"));
+	window.setWindowIcon(QIcon(QCoreApplication::applicationDirPath() + "\\icon.png"));
 
 	window.show();
 
