@@ -67,7 +67,6 @@ void GuidGen::addSomeIdFunc() {
     int value = c_text.simplified().toInt(); // возвращает строку, в которой символы пробела удалены в начале и в конце, а все неодиночные пробелы, находящиеся внутри строки, заменены одиночными;
     // int value = QInputDialog::getInt(this, "Generate ID", "Your ID's"); можно и так использовать. Правда немного другой формат строки ввода.
 
-
     for (int i = 0; i < value; i++)
     {
         QString currentString = RandomGenerateID();
@@ -81,10 +80,10 @@ void GuidGen::addSomeIdFunc() {
             ++counter;
             countOfIdCurrent = countOfId + countOfIdCurrent.setNum(counter);
         }
-
     }
     countLabel->setText(countOfIdCurrent);
 }
+
 
 int getRandomNumber(int min, int max)
 {
@@ -117,6 +116,7 @@ QString genFourSign()
     return idString;
 }
 
+
 QString GuidGen::RandomGenerateID()
 {
     QString idString;
@@ -135,6 +135,7 @@ QString GuidGen::RandomGenerateID()
     return idString;
 }
 
+
 void GuidGen::addSomeGuids()
 {
     QString currentString = RandomGenerateID();
@@ -144,7 +145,6 @@ void GuidGen::addSomeGuids()
     // добавил костыль в виде пробелов для увеления длины окна до нужного размера т.к. подходящего метода я не нашёл.
     QString c_text = inputDialog.getText(this, "Generate ID", "Your ID                                                             ", QLineEdit::Normal, currentString);
     QString c_textSimp = c_text.simplified();
-
 
     if (!c_textSimp.isEmpty()) {
 
@@ -156,6 +156,7 @@ void GuidGen::addSomeGuids()
         countLabel->setText(countOfIdCurrent);
     }
 }
+
 
 void GuidGen::removeItem() { // удаление элемента
 
@@ -207,9 +208,4 @@ void GuidGen::copeAllID()
     pcb->setText(allBufferId, QClipboard::Clipboard); // отправляем в буффер нужную нам строку. также можно и изображения но другим методом.
 
     statusBar->showMessage("Your Guids was copied", 2000);
-
 }
-
-
-
-
